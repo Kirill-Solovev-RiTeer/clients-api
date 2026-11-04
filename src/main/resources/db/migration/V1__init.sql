@@ -1,0 +1,8 @@
+CREATE TABLE client_account (
+    id BIGSERIAL PRIMARY KEY,
+    full_name TEXT NOT NULL,
+    gender VARCHAR(1),
+    status VARCHAR(20) NOT NULL DEFAULT 'ACTIVE',
+    create_dttm TIMESTAMP WITH TIME ZONE NOT NULL,
+    modify_dttm TIMESTAMP WITH TIME ZONE NOT NULL
+);
